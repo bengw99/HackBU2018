@@ -1,9 +1,9 @@
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
 
-class Auther(object):
-	flow
-	auth_url
+class Auther():
+	#flow
+	#auth_url
 	
 	def __init__():
 		# Creates a flow

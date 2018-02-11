@@ -14,7 +14,7 @@ def static_from_root():
 
 @app.route('/preauth/')
 def preauth():
-	auther = make_auther()
+    auther = make_auther()
     auth_url = auther.get_auth_url()
     return redirect(auth_url)
 
