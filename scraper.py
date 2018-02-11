@@ -12,5 +12,5 @@ def scrape(code):
 	auther = Auther()
 	auther.get_flow().fetch_token(code = code)
 	session = auther.get_flow().authorized_session()
-	messages = session.get("https://www.googleapis.com/gmail/v1/users/me/messages").json()
+        messages = session.get('https://www.googleapis.com/gmail/v1/users/me/messages/?q="in:inbox"').json()
 	return messages
