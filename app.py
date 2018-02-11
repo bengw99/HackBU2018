@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import sys
 from auth import *
 
@@ -14,10 +14,12 @@ def static_from_root():
 
 @app.route('/preauth/')
 def preauth():
-	auth_url = start_auth()
-	return redirect(auth_url);
+    auth_url = start_auth()
+    return redirect(auth_url)
 
-
+@app.route('/email/<string:pluscode>')
+def scrape(pluscode):
+    return pluscode
 
 if __name__ == "__main__":
     app.run(debug=True)
