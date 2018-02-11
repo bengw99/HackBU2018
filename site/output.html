@@ -49,11 +49,14 @@
 			divContainer.appendChild(table);
 		}
 		function testTable() {
-			var senders = JSON.parse('{{reviews}}');
+			senders = get_data({{ reviews|tojson }});
+			alert(senders);
 			var tableref = document.getElementById("maintable");
 			var review;
+			alert("prefor");
 			for (review of senders) {
 				var newRow = tableRef.insertRow(tableref.rows.length);
+				alert("after newrow but no content added");
 				rowcontent = "<td>"+review.url+"</td><td>"+review.count+"</td><td>"+review.safety_rating+"</td";
 				newRow.innerHTML = rowcontent;
 			}
