@@ -5,7 +5,7 @@
 	</head>
 
 	<body>
-		<button onclick="createTable()">click here</button>
+		<button onclick="testTable()">click here</button>
 		<div id="showData"></div>
 		<table id="maintable">
 			<tr>
@@ -49,15 +49,13 @@
 			divContainer.appendChild(table);
 		}
 		function testTable() {
-			senders = get_data({{ reviews|tojson }});
-			alert(senders);
+			senders = get_data('{{ reviews|tojson|safe }}');
+			msenders = '{"data":'+senders.substring(1, senders.length - 1)+'}';
+			vsenders = JSON.parse(msenders).data;
 			var tableref = document.getElementById("maintable");
-			var review;
-			alert("prefor");
-			for (review of senders) {
-				var newRow = tableRef.insertRow(tableref.rows.length);
-				alert("after newrow but no content added");
-				rowcontent = "<td>"+review.url+"</td><td>"+review.count+"</td><td>"+review.safety_rating+"</td";
+			for (var i = 0; i < msenders.length; i++) {
+				var newRow = tableref.insertRow(tableref.rows.length);
+				rowcontent = "<td>"+vsenders[i].url+"</td><td>"+vsenders[i].count+"</td><td>"+vsenders[i].safety_rating+"</td";
 				newRow.innerHTML = rowcontent;
 			}
 		}
