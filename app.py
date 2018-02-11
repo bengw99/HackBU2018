@@ -32,7 +32,7 @@ def postauth(path):
     json_string = json.dumps([ob.__dict__ for ob in messages])
     print("JSON STRING:")
     print(json_string);
-    return render_template('output.html', reviews=json.dumps(messages))
+    return render_template('output.html', reviews = json_string)
 
 if __name__ == "__main__":
     app.run(debug=True)
