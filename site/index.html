@@ -11,6 +11,7 @@
         <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 
         <link rel="stylesheet" href="{{ url_for('static', filename=css/style.css') }}">
+        <link rel="stylesheet" href="css/style.css">
         
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
@@ -262,7 +263,6 @@ et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
                                 </form>
                                 </div>
                                 <div id="tab2">
-                                    <form id="contact" action="/preauth/" method="post">
                                           <div class="text-content">
                                           <h4>Scan Your Email</h4>
                                             <ul class="info-post">
@@ -274,11 +274,9 @@ et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
                                             </ul>
                                         <fieldset><br>
                                             <div class="col-md-10" style="padding-left: 35%">
-                                    <button type="submit" id="submit" class="btn">Check Email</button>
-                                  </fieldset>
+                                    <div class="border-button"><a href="/preauth/">Check Email</a></div>
                               </div>
                                     </div>
-                                </form>
                                 </div>
                             </div>
                         </div>
