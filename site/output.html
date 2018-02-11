@@ -7,6 +7,13 @@
 	<body>
 		<button onclick="createTable()">click here</button>
 		<div id="showData"></div>
+		<table id="maintable">
+			<tr>
+				<th>URL</th>
+				<th># of emails</th>
+				<th>Security Rating</th>
+			<tr>
+		</table>
 	</body>
 	<script>
 		function get_data(vars){
@@ -40,6 +47,16 @@
 			var divContainer = document.getElementById("showData");
 			divContainer.innerHTML = "";
 			divContainer.appendChild(table);
+		}
+		function testTable() {
+			var senders = JSON.parse('{{reviews}}');
+			var tableref = document.getElementById("maintable");
+			var review;
+			for (review of senders) {
+				var newRow = tableRef.insertRow(tableref.rows.length);
+				rowcontent = "<td>"+review.url+"</td><td>"+review.count+"</td><td>"+review.safety_rating+"</td";
+				newRow.innerHTML = rowcontent;
+			}
 		}
 	</script>
 </html>
