@@ -6,8 +6,6 @@ from oauth2client import file, client, tools
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
 
-class Sender():
-	
 def scrape(pluscode):
 	code = pluscode
 	auther.get_flow().fetch_token(code = code)

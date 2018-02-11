@@ -19,9 +19,12 @@ def preauth():
     auth_url = auther.get_auth_url()
     return redirect(auth_url)
 
-@app.route('/email/<string:pluscode>')
+@app.route('/email/<any:pluscode>')
 def postauth(pluscode):
-	messages = scrape(pluscode)
+    print("PLUSCODE = " + pluscode)
+    print("------------------------WORKING---------------------")
+    messages = scrape(pluscode)
+    print("___________---------------CHECK HERE FOR MESSAGES: " + messages)
     return messages
 
 if __name__ == "__main__":
