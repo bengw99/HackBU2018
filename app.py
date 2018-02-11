@@ -25,9 +25,14 @@ def preauth():
 def postauth(path):
     code = request.args.get('code')
     messages = scrape(code)
-# MUSC CONVERT MESSAGES TO STRINGS
+# MUSC CONVERT MESSAGES TO DATA TYPE 
     batch_rate(messages)
-    return messages
+    json_string = json.dumps([ob.__dict__ for ob in messages])
+#    return json_string
+    print("\n\n")
+    print(json_string);
+    print("\n\n")
+    return render_template('output.html', reviews = json_string)
 
 if __name__ == "__main__":
     app.run(debug=True)
