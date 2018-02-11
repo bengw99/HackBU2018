@@ -6,11 +6,12 @@ import certifi
 	#checkURL("www.zon.com")
 	
 def checkURL(givenURL):
-	
+        print("CHECKING")	
+        tempURL = givenURL
 	if(givenURL[0:4] != 'http'):
-		givenURL = 'http://' + givenURL
+		tempURL = 'http://' + givenURL
 	try:
-		r = requests.get(givenURL,verify=True)
+		r = requests.get(tempURL,verify=True, timeout=1)
 		return 1
 		#print("Response code: %d" % r.status_code)
 		#if(r.status_code == requests.codes.ok):
@@ -18,9 +19,9 @@ def checkURL(givenURL):
 		#else:
 			#print("Website does not work")
 		#print("Website is certified")
-		
 	except:
 		return 0
+        return 0
 		#try:
 			#r = requests.get(givenURL, verify=False)
 			#print("Response code: %d" % r.status_code)
