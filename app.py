@@ -3,6 +3,7 @@ import sys
 import json
 from auth import *
 from scraper import *
+from batchrate import *
 
 app = Flask(__name__, static_folder='static', static_url_path='/static', template_folder="../HackBU2018/site")
 
@@ -24,9 +25,9 @@ def preauth():
 def postauth(path):
     code = request.args.get('code')
     messages = scrape(code)
-    print("\n\n")
-    print(json.dumps(messages, indent=1))
-    return json.dumps(messages)
+# MUSC CONVERT MESSAGES TO STRINGS
+    batch_rate(messages)
+    return messages
 
 if __name__ == "__main__":
     app.run(debug=True)

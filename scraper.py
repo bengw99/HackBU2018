@@ -32,7 +32,7 @@ class Sender():
         return
 
     def set_safety_rating(self, safety_rating):
-        # Link to Troy's code later
+        self.safety_rating = safety_rating
         return
 
 def make_sender(url):
@@ -79,4 +79,4 @@ def scrape(code):
 # Checking Sender class
     for csender in list_of_senders:
         print("URL: %s \n\t NUMBER %d" % (csender.get_url(), csender.get_count()))
-    return messages 
+    return list_of_senders 
