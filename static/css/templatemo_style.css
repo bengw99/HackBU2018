@@ -175,7 +175,7 @@ p {
   line-height: 50px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #46bae2!important;
+  color: #0e5193!important;
   transition: all 0.5s;
   margin-left: 30px;
 }
@@ -264,7 +264,7 @@ p {
 
 
 .intro {
-  background-color: #46bae2;
+  background-color: #177382 ;
   text-align: center;
   padding: 80px 0px;
 }
@@ -320,7 +320,7 @@ p {
 }
 
 #about .first-service {
-  background-color: rgba(242, 116, 95, 0.75);
+  background-color: rgba(30, 185, 125, 0.75);
 }
 
 #about .second-service {
