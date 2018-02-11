@@ -16,7 +16,7 @@ class Sender():
 
     def __init__(self, url):
         self.url = url
-        count += 1
+        self.count += 1
 
     def get_url(self):
         return self.url
@@ -41,6 +41,7 @@ def make_sender(url):
 
 def scrape(code):
 # Making variables
+    list_of_senders = []
     auther = Auther()
     auther.get_flow().fetch_token(code = code)
     session = auther.get_flow().authorized_session()
@@ -67,13 +68,15 @@ def scrape(code):
             continue
 
 # Discovering who sent you mail
-        list_of_senders = []
         found = False
         for current_sender in list_of_senders:
             if(current_sender.get_url() == sender_url):
                 current_sender.increment_count()
                 found = True
         if found == False:
-            list_of_senders.append(sender)
+            list_of_senders.append(make_sender(sender_url))
         print("Sender Url: %s \n\t Sender: %s" % (sender_url, sender))
+# Checking Sender class
+    for csender in list_of_senders:
+        print("URL: %s \n\t NUMBER %d" % (csender.get_url(), csender.get_count()))
     return messages 
