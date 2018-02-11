@@ -6,7 +6,7 @@ def start_auth():
     flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
                 'client_secret.json',
                 scopes=['https://www.googleapis.com/auth/gmail'],
-                redirect_uri = 'http://localhost:5000/email.html')
+                redirect_uri = 'http://localhost:5000/email/')
 
     # Tells user where to go
     auth_url, _ = flow.authorization_url(prompt="consent")
