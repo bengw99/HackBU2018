@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect
 import sys
+import json
 from auth import *
 from scraper import *
 
@@ -23,8 +24,9 @@ def preauth():
 def postauth(path):
     code = request.args.get('code')
     messages = scrape(code)
-    print("---------------CHECK HERE FOR MESSAGES: " + messages)
-    return messages
+    print("\n\n")
+    print(json.dumps(messages, indent=1))
+    return json.dumps(messages)
 
 if __name__ == "__main__":
     app.run(debug=True)
