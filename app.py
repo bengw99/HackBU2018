@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import sys
 from auth import *
+from scraper import *
 
 app = Flask(__name__, static_folder='static', static_url_path='/static', template_folder="../HackBU2018/site")
 
@@ -19,8 +20,9 @@ def preauth():
     return redirect(auth_url)
 
 @app.route('/email/<string:pluscode>')
-def scrape(pluscode):
-    return pluscode
+def postauth(pluscode):
+	messages = scrape(pluscode)
+    return messages
 
 if __name__ == "__main__":
     app.run(debug=True)

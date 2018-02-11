@@ -18,21 +18,9 @@ class Auther():
 	def get_auth_url(self):
 		return self.auth_url
 
-        def get_flow(self):
-            return self.flow
+    def get_flow(self):
+        return self.flow
 		
 def make_auther():
 	auther = Auther()
 	return auther
-	
-	
-
-"""
-    # Provides user with authorization code and then an access token
-    code = input("Enter the authorization code: ")
-    flow.fetch_token(code = code)
-
-    # Use flow.authorized_session
-    session = flow.authorized_session()
-    print(session.get("https://googleapis.com/userinfo/v2/me").json())
-"""
