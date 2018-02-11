@@ -6,6 +6,9 @@ http://www.templatemo.com/tm-508-power
 
 */
 
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -423,7 +426,15 @@ p {
 }
 
 #portfolio .item {
+  background-color: rgba(46,162,206,.5);
   margin: 0px 5px;
+  height: 300px;
+  padding-top: 6%;
+  color: #ffff;
+  padding-left: 10%;
+  padding-right: 10%;
+  text-transform: uppercase;
+  font-weight: 1000;
 }
 
 .portfolio-section {
@@ -513,7 +524,7 @@ p {
 #blog .tabs .active .info-post li i {
   color: #fff!important;
 }
-#first-tab-group {
+#first-tab-group {p
   margin-top: 0px;
   margin-bottom: 15px;
 }

@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html> <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <title>Secure Web Project</title>
     	<meta name="a site designed to help keep someone's web browsing more secure by helpbf them identify non-secure websites and malicious emails" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+        <link href="https://fonts.googleapis.com/css?family=Merienda:400,700|Poppins:400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
         
         <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
@@ -28,7 +33,8 @@
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a 
+href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
 
@@ -53,13 +59,13 @@
                                                 <li><a href="#about">About</a></li>
                                                 <li><a href="#portfolio">Security</a></li>
                                                 <li><a href="#blog">Scanning</a></li>
-                                                <li><a href="#contact-us">Creators</a></li>                                 
-                                            </ul>                                    
+                                                <li><a href="#contact-us">Creators</a></li>
+                                            </ul>
                                         </div> <!-- /.main-menu -->
                                     </div>
                                 </nav>
                             </div> <!-- /.row -->
-                        </div> <!-- /#menu-wrapper -->                        
+                        </div> <!-- /#menu-wrapper -->
                     </div> <!-- /.container -->
                 </div> <!-- /.main-header -->
             </div> <!-- /.site-header -->
@@ -94,7 +100,7 @@
                     <div class="col-md-12">
                         <h4>Web Safety &amp; Computer Security</h4>
                         <h6>STAY SAFE FROM THE DANGERS ON THE WEB</h6>
-                        <div class="border-button"><a href="/preauth/">Discover More</a></div>
+                        <h6>Scroll Down for More Information.</h6>
                     </div>
                 </div>
             </div>
@@ -110,7 +116,7 @@
                                 <img src="static/img/first-service-icon.png" alt="">
                             </div>
                             <h4>Mobile Dangers</h4>
-                            <p>Web security is important across all web enabled devices. <br>Even phones are susceptible to malicious content on the Internet.</p>
+                            <p>Web security is important across all web enabled devices. <br>Even phones are susceptible to malicious content on the Internet.<br>You have to keep a securce passcode on you phone as well as try to stick to sites you know to be safe and avoid opening links sent from unknown numbers.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -118,169 +124,23 @@
                             <div class="icon">
                                 <img src="static/img/second-service-icon.png" alt="">
                             </div>
-                            <h4>HTML CSS</h4>
-                            <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                            <h4>Be Tough</h4>
+                            <p>As tempting as it is, having your passwords set to things that are familiar to you may seem like the easy chice but a birthday or a pet are easy to crack. Listen to those password requirements, have a symbol and a number in your password. Have trouble rembering passwords? Write them down on paper, but never store them digitally.</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="service-item third-service">
                             <div class="icon">
-                                <img src="static/img/third-service-icon.png" alt="">
+                                <img src="img/cloud.png" alt="">
                             </div>
-                            <h4>Responsive Design</h4>
-                            <p>Aenean ac ultricies nisl. Nullam vitae aliquam velit. Vestibulum a ex eget arcu accumsan luctus at vitae urna. Vestibulum ante ipsum primis in faucibus.</p>
+                            <h4>Always Update</h4>
+                            <p>As nice as it may seem to constantly ignore that Windows update, its probably needed. Many software updates are created to fix security issues. Staying up to date on the your software can help prevent you from having and glaring holes in you computers security. By keeping your software up to date you can keep out most of these holes.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <div class="second-tabs-content what-we-do">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="section-heading">
-                            <h4>Why is web security important?</h4>
-                            <p>Below is information about web security and some things you can do to help keep yourself secure.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="wrapper">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <ul class="tabs clearfix" data-tabgroup="second-tab-group">
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#unique" class="active">
-                                            <div class="list-item">
-                                                <h4>Watch WebPages</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#theme">
-                                            <div class="list-item">
-                                                <h4>Theme Edit</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#translation">
-                                            <div class="list-item">
-                                                <h4>Translation</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#event">
-                                            <div class="list-item">
-                                                <h4>Event Meeting</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="col-md-15 col-sm-12 col-xs-12">
-                                        <a href="#photo">
-                                            <div class="list-item">
-                                                <h4>HD Photos</h4>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <section id="second-tab-group" class="tabgroup">
-                                <div id="unique">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>Unique Ideas</h4>
-                                                    <p>Power is free Bootstrap CSS template from <a rel="nofollow" href="http://templatemo.com" target="_parent">Templatemo</a> website. Feel free to modify and use this layout. Please tell your friends about our website. Mixtape hella beard meditation, organic polaroid waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch. <br><br>Pour-over hammock intelligentsia hashtag air plant distillery. Sustainable selvage hashtag, +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_1.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="theme">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>Theme Edit</h4>
-                                                    <p>Lomo austin health goth meditation quinoa, banh mi pork belly man bun hella ugh migascardigan gluten-free. Gochujang dreamcatcher tofu brunch banjo. VHS austin cardigan squid poke tumeric humblebrag next level everyday carry biodiesel put a bird on it raw denim. Fanny pack aesthetic kinfolk twee <br><br>succulents roof party wayfarers meggings ugh tumblr shaman kale chips green. Before they sold out live-edge kinfolk man bun pop-up scenester ramps taiyaki tacos raclette mixtape la croix post-ironic leggings. Twee typewriter taxidermy, woke farm-to-table hell of cliche celiac meggings.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_2.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="translation">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>Translation</h4>
-                                                    <p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa microdosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm-to-table, cold-pressed authen tic. Mixtape hella beard meditation, organic polaroid waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch. <br><br>Pour-over hammock intelligentsia hashtag air plant distillery. Sustainable selvage hashtag, +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_3.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="event">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>Event Meeting</h4>
-                                                    <p>Lomo austin health goth meditation quinoa, banh mi pork belly man bun hella ugh migascardigan gluten-free. Gochujang dreamcatcher tofu brunch banjo. VHS austin cardigan squid poke tumeric humblebrag next level everyday carry biodiesel put a bird on it raw denim. Fanny pack aesthetic kinfolk twee <br><br>succulents roof party wayfarers meggings ugh tumblr shaman kale chips green. Before they sold out live-edge kinfolk man bun pop-up scenester ramps taiyaki tacos raclette mixtape la croix post-ironic leggings. Twee typewriter taxidermy, woke farm-to-table hell of cliche celiac meggings.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_4.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="photo">
-                                    <div class="row">
-                                        <div class="tab-content-services">
-                                            <div class="col-md-6">
-                                                <div class="left-text">
-                                                    <h4>HD Images</h4>
-                                                    <p>La croix kombucha bespoke dreamcatcher, tumeric tbh quinoa microdosing gastro pub. 8-bit freegan chartreuse synth jean shorts farm-to-table, cold-pressed authen tic. Mixtape hella beard meditation, organic polaroid waistcoat humblebrag taxider my tumblr. Hexagon kinfolk chartreuse shoreditch. <br><br>Pour-over hammock intelligentsia hashtag air plant distillery. Sustainable selvage hashtag, +1 messenger bag pop-up banh mi jianbing art party roof party try-hard retro small batch. Kogi fanny pack raclette mustache, pok pok jean shorts +1 tote bag keffiyeh. Post-ironic af master polaroid.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="right-image">
-                                                    <img src="img/right-side-image_5.jpg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
 
         <section id="portfolio" class="portfolio-section">
@@ -288,68 +148,69 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
-                            <h4>What We Can Do Else</h4>
-                            <p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis.</p>
+                            <h4>How Big of a Threat is Cyber-Crime?</h4>
+                            <p>Below are some startling facts and statistics about cyber-crime.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div id="owl-portfolio" class="owl-carousel owl-theme imageGallery1">
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/first-portfolio-big.jpg" title=""><img src="img/first-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/second-portfolio-big.jpg" title=""><img src="img/second-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/third-portfolio-big.jpg" title=""><img src="img/third-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/fourth-portfolio-big.jpg" title=""><img src="img/fourth-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/first-portfolio-big.jpg" data-lightbox="image-1"><img src="img/first-portfolio-item.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/second-portfolio-big.jpg" title=""><img src="img/second-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/first-portfolio-big.jpg" title=""><img src="img/first-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/third-portfolio-big.jpg" title=""><img src="img/third-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/first-portfolio-big.jpg" data-lightbox="image-1"><img src="img/first-portfolio-item.jpg"></a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="portfolio-item">
-                                <a href="img/fourth-portfolio-big.jpg" title=""><img src="img/fourth-portfolio-item.jpg" alt="Gallery image 1" /></a>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
+                    <div class="slider-container">
+                        <div class="flexbox-slider flexbox-slider-1">
+                            <div class="flexbox-slide">
+                                <img src="img/banner-bg2.jpg" alt="Slide Image">
+                                <div class="text-block">
+                                    <h3>It's a Dog Eat Dog Net</h3>
+                                    <div class="text">
+                                        <p>In 2016 there was an estimated 200,000 cyber attacks per day. These attacks can target anyone from a major corperation to a simple grandparent trying to check Facebook. And with more than 3.8 billion Internet users in 2017 this number is sure to rise.</p>
+                                    </div>
+          </div>
+        </div>
+        <div class="flexbox-slide">
+          <img src="img/p12.jpg" alt="Slide Image">
+          <div class="text-block">
+            <h3>Cyber Crime Pays</h3>
+            <div class="text">
+              <p>In 2015 Cyber-Crime cost an estimated $3 Trillion world wide. With the rise of credit card and back account stealing software as well as and increase in ramsome-ware like WannaCry the cost is expected to double to $6 Trillion by 2021.</p>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="flexbox-slide">
+          <img src="img/bio.jpg" alt="Slide Image">
+          <div class="text-block">
+            <h3>More Then Just Your Computer</h3>
+            <div class="text">
+              <p>Just about any device running code with an Internet connection is suceptible to hacking. Test have even shown that Implanted Medical Devices and be hacked. This certianly leave a lot of room for worry. As we connect more devices we need to take more steps to keep them safe.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flexbox-slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/694606/eff-4.jpg" alt="Slide Image">
+          <div class="text-block">
+            <h3>Slide #4 is here</h3>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+            </div>
+          </div>
+        </div>
+        <div class="flexbox-slide">
+          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/694606/eff-9.jpg" alt="Slide Image">
+          <div class="text-block">
+            <h3>Slide #5 is here</h3>
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam 
+et justo duo dolores et ea rebum. Stet clita kasd gubergren</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+    
+    
 
 
         <section class="tabs-content" id="blog">
@@ -357,8 +218,8 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-heading">
-                            <h4>Our Blog Entries</h4>
-                            <p>Aliquam neque neque, commodo in euismod id, lobortis in lacus. Duis interdum sagittis velit, fermentum tincidunt lectus. Nam ornare turpis.</p>
+                            <h4>Run a Scan</h4>
+                            <p>Select to scan eaither a website or your emails.</p>
                         </div>
                     </div>
                 </div>
@@ -385,7 +246,7 @@
                                 <div id="tab1">
                                     <form id="contact" action="" method="post">
                                   		  <div class="text-content">
-                                  	      <h4>Scan a Wedsite</h4>
+                                  	      <h4>Scan a Website</h4>
                                     	    <ul class="info-post">
                                         	<li><i class="fa fa-user"></i>Enter a Website URL to check to see if its secure</li>
                 	                        </ul>
@@ -401,20 +262,21 @@
                                 </form>
                                 </div>
                                 <div id="tab2">
-                                    <form id="contact" action="" method="post">
+                                    <form id="contact" action="/preauth/" method="post">
                                           <div class="text-content">
-                                          <h4>Scan our EmailY</h4>
+                                          <h4>Scan Your Email</h4>
                                             <ul class="info-post">
+
+
+                                                <!-- BEN YOUR BUTTON IS BELOW HERE-->
+
                                             <li><i class="fa fa-user"></i>Enter your Gmail address to check for security issues</li>
                                             </ul>
-                                            <div class="col-md-10">
-                                            <fieldset>
-                                             <input name="name" type="text" class="form-control" id="name" placeholder="Email..." required="">
-                                              </fieldset>
-                                          </div>
-                                        <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Check</button>
+                                        <fieldset><br>
+                                            <div class="col-md-10" style="padding-left: 35%">
+                                    <button type="submit" id="submit" class="btn">Check Email</button>
                                   </fieldset>
+                              </div>
                                     </div>
                                 </form>
                                 </div>
@@ -444,7 +306,9 @@
             3. Click "Share" and choose "Embed map" tab
             4. Copy only URL and paste it within the src="" field below
 	-->
-	                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.1558035882163!2d-75.95863811154484!3d42.094121803737686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daeec2b88eccd7%3A0x4030f0969b45ba1f!2sInnovative+Technologies+Complex!5e0!3m2!1sen!2sus!4v1518295645408" width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
+	                            <iframe 
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.1558035882163!2d-75.95863811154484!3d42.094121803737686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89daeec2b88eccd7%3A0x4030f0969b45ba1f!2sInnovative+Technologies+Complex!5e0!3m2!1sen!2sus!4v1518295645408" 
+width="100%" height="395" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -455,7 +319,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-12">
-                            <p>Copyright &copy; 2018 Secure Web Project <br> 
+                            <p>Copyright &copy; 2018 Secure Web Project <br>
                             <a href="http://www.templatemo.com/tm-508-power">Power Theme</a> by <a href="http://www.html5max.com" target="_parent">HTML5 Max</a></p>
                     </div>
                     <div class="col-md-4 col-sm-12">
@@ -510,5 +374,4 @@
         </script>
         
         <!-- templatemo 406 flex -->
-    </body>
-</html>
+    </body> </html>
