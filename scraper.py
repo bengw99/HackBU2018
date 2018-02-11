@@ -57,7 +57,12 @@ def scrape(code):
         for header in headers:
             if header.get('name') == 'From':
                 sender = header.get('value') 
-                sender_url = sender[sender.find('@')+1:sender.find('>')]
+                if ">" in sender:
+                    sender_url = sender[sender.find('@')+1:sender.find('>')]
+                else:
+                    sender_url = sender[sender.find('@')+1:len(sender)]
+                if ">" in sender_url or "<" in sender_url or "@" in sender_url:
+                    sender_url = None
         if sender_url == None:
             continue
 
@@ -70,5 +75,5 @@ def scrape(code):
                 found = True
         if found == False:
             list_of_senders.append(sender)
-        print(sender_url)
+        print("Sender Url: %s \n\t Sender: %s" % (sender_url, sender))
     return messages 
