@@ -27,11 +27,11 @@ def postauth(path):
     messages = scrape(code)
 # MUSC CONVERT MESSAGES TO DATA TYPE 
     batch_rate(messages)
-    json_string = json.dumps([ob.__dict__ for ob in messages])
 #    return json_string
-    print("\n\n")
+#    review = batch_rate(json_string);
+    json_string = json.dumps([ob.__dict__ for ob in messages])
+    print("JSON STRING:")
     print(json_string);
-    print("\n\n")
     return render_template('output.html', reviews = json_string)
 
 if __name__ == "__main__":

@@ -10,20 +10,19 @@
 	</body>
 	<script>
 		function get_data(vars){
-			return vars;
+			return vars 
 		}
 		function createTable(){
 			myData = get_data({{ reviews|tojson }});
+			alert(myData);
 			var col = [];
 			for (var i = 0; i < myData.length; i++) {
 				for (var key in myData[i]) {
 					if (col.indexOf(key) === -1) {
 						col.push(key);
-						alert(col);
 					}
 				}
 			}
-			alert(col);
 			var table = document.createElement("table");
 			var tr = table.insertRow(-1); 
 			for (var i = 0; i < col.length; i++) {

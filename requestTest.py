@@ -2,8 +2,8 @@
 import requests
 from requests.auth import HTTPBasicAuth
 import certifi
-def main():
-	checkURL("http://www.bittorrent.com")
+# def main():
+#	checkURL("josh")
 	
 def checkURL(givenURL):
 	
@@ -27,5 +27,5 @@ def checkURL(givenURL):
 	except:
 		print("Website does not have basic HTTP Authentication")
 	
-if __name__ == "__main__":
-	main()
+# if __name__ == "__main__":
+#	main()
